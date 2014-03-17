@@ -3,7 +3,7 @@
 Name: Thesis Box Boilerplate
 Author: Richard Barratt - richerimage.co.uk
 Version: 1.0
-Description: A box boilerpate for the Thesis 2 framework for Wordpress. Make sure your file is called box.php. Zip it in a file named the same as your class. For more info see diythemes.com
+Description: A box boilerpate for the Thesis 2 framework for Wordpress.
 Class: thesis_box_boilerplate
  */
 
@@ -23,16 +23,16 @@ class thesis_box_boilerplate extends thesis_box {
   }
   
   public function preload() {
-    // Add enqueues, ect, in here - runs only on templates your box appears in!
+    // Add enqueues, ect, in here - runs only on templates your box appears in.
   }
     
   protected function class_options() { 
-    // These optiuons appear in the 'Boxes. menu
+    // These options appear in the 'Boxes'. menu
     return array(
       'sample_text_box_option' => array(
         'type' => 'textarea',
         'rows' => 12,
-        'tooltip' => __('Enter your tool tip here', $this->_class)
+        'tooltip' => __('Enter your tooltip here', $this->_class)
       ),
       'sample_checkbox_option' => array(
         'type' => 'checkbox',
